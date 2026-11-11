@@ -1,0 +1,314 @@
+:root {
+  color: #241c16;
+  background: #f3efe6;
+  font-family: "Figtree", "Avenir Next", sans-serif;
+  font-size: 16px;
+  line-height: 1.45;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  border: 1px solid #d9cfc2;
+  background: #fffdf8;
+  color: #241c16;
+  border-radius: 999px;
+  padding: 0.45rem 0.9rem;
+  cursor: pointer;
+}
+
+button:hover {
+  border-color: #9a3412;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+.shell {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  min-height: 100vh;
+}
+
+.rail {
+  background: #241c16;
+  color: #f6f1e8;
+  padding: 1.75rem 1.25rem;
+}
+
+.brand-mark {
+  display: block;
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 1.7rem;
+  font-weight: 680;
+  letter-spacing: -0.03em;
+}
+
+.brand-role {
+  display: block;
+  margin-top: 0.2rem;
+  color: #d6c4b0;
+  font-size: 0.85rem;
+}
+
+.rail-nav {
+  display: grid;
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+
+.nav-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 100%;
+  text-align: left;
+  border: 0;
+  background: transparent;
+  color: #f6f1e8;
+  border-radius: 12px;
+  padding: 0.75rem 0.8rem;
+}
+
+.nav-item small {
+  color: #d6c4b0;
+}
+
+.nav-item.active,
+.nav-item:hover {
+  background: #3a2d23;
+  border-color: transparent;
+}
+
+.canvas {
+  padding: 2rem 2.5rem 4rem;
+}
+
+.page-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  align-items: flex-end;
+  margin-bottom: 1.5rem;
+}
+
+.eyebrow {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.72rem;
+  color: #9a3412;
+  font-weight: 700;
+}
+
+h1,
+h2 {
+  font-family: "Fraunces", Georgia, serif;
+  font-weight: 560;
+  letter-spacing: -0.03em;
+  margin: 0.15rem 0;
+}
+
+h1 {
+  font-size: 2.4rem;
+}
+
+.lede,
+.muted,
+.meta,
+.empty {
+  color: #6f675e;
+}
+
+.lede {
+  max-width: 42rem;
+  margin: 0.4rem 0 0;
+}
+
+.primary {
+  background: #9a3412;
+  color: #fffaf5;
+  border-color: #9a3412;
+}
+
+.danger {
+  color: #9f1239;
+  border-color: #f0c9d2;
+}
+
+.danger.solid {
+  background: #9f1239;
+  color: white;
+  border-color: #9f1239;
+}
+
+.banner {
+  background: #fff1f2;
+  color: #9f1239;
+  border-radius: 12px;
+  padding: 0.75rem 1rem;
+}
+
+.stack {
+  display: grid;
+  gap: 1rem;
+}
+
+.card {
+  background: #fffdf8;
+  border: 1px solid #e6dccf;
+  border-radius: 18px;
+  padding: 1rem 1.1rem 0.4rem;
+}
+
+.card-head,
+.children li {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+}
+
+.meta {
+  display: flex;
+  gap: 0.8rem;
+  margin: 0.2rem 0 0;
+  font-size: 0.92rem;
+}
+
+code {
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 0.86em;
+}
+
+.children {
+  list-style: none;
+  margin: 0.8rem 0 0;
+  padding: 0;
+}
+
+.children li {
+  border-top: 1px solid #efe7dc;
+  padding: 0.75rem 0;
+}
+
+.actions {
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.inset {
+  margin: 0.6rem 0 0.8rem;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(36, 28, 22, 0.38);
+  display: grid;
+  justify-content: end;
+}
+
+.drawer.form-editor {
+  width: min(560px, 100vw);
+  overflow: auto;
+}
+
+.field-list {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.field-card {
+  border: 1px solid #e6dccf;
+  border-radius: 14px;
+  padding: 0.75rem;
+  display: grid;
+  gap: 0.55rem;
+}
+
+.field-card legend {
+  font-weight: 700;
+  padding: 0 0.3rem;
+}
+
+label.check {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-weight: 600;
+}
+
+select {
+  border: 1px solid #d9cfc2;
+  border-radius: 10px;
+  padding: 0.65rem 0.75rem;
+  background: white;
+}
+
+.drawer {
+  width: min(420px, 100vw);
+  height: 100%;
+  background: #fffdf8;
+  padding: 1.5rem;
+  display: grid;
+  align-content: start;
+  gap: 0.85rem;
+  box-shadow: -16px 0 40px rgba(36, 28, 22, 0.12);
+}
+
+.drawer.confirm {
+  height: auto;
+  align-self: center;
+  margin-right: 1.5rem;
+  border-radius: 18px;
+}
+
+label {
+  display: grid;
+  gap: 0.35rem;
+  font-weight: 600;
+}
+
+input {
+  border: 1px solid #d9cfc2;
+  border-radius: 10px;
+  padding: 0.65rem 0.75rem;
+  background: white;
+}
+
+@media (max-width: 800px) {
+  .shell {
+    grid-template-columns: 1fr;
+  }
+
+  .rail-nav {
+    grid-template-columns: 1fr 1fr;
+    margin-top: 1rem;
+  }
+
+  .canvas {
+    padding: 1.25rem;
+  }
+
+  .page-head,
+  .card-head,
+  .children li {
+    display: grid;
+  }
+}
